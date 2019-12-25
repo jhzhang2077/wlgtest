@@ -40,7 +40,7 @@ jobs:
      script: |
       # Write your PowerShell commands here.
       
-      $(system.defaultWorkingDirectory)\build\Debug\mytest.exe get-process |Out-File -filepath results.txt
+      $(system.defaultWorkingDirectory)\build\Debug\mygtest.exe get-process |Out-File -filepath results.txt
       exit
      
 
