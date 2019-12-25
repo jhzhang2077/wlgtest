@@ -13,6 +13,7 @@ jobs:
     demands:
     - cmake
 
+
   steps:
 #  - task: CMake@1
 #    displayName: 'CMake ..'
