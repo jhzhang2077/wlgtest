@@ -13,6 +13,7 @@ jobs:
     demands:
     - cmake
 
+
   steps:
 #  - task: CMake@1
 #    displayName: 'CMake ..'
@@ -40,7 +41,8 @@ jobs:
      script: |
       # Write your PowerShell commands here.
       
-      $(system.defaultWorkingDirectory)\build\Debug\mygtest.exe get-process |Out-File -filepath results.txt
+      $(system.defaultWorkingDirectory)\build\Debug\mygtest.exe get-process > results.txt
+      $(system.defaultWorkingDirectory)\build\Debug\mygtest.exe
       exit
      
 
